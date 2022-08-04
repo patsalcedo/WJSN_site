@@ -18,5 +18,19 @@ author: "Pat"
     </div>
 </section>
 
+<section id="about" class="section">
+    <div class="container">
+
+        <div class="members-about-container">
+            {% for member in site.data.members %}
+                Name: {{ member.name }} <br>
+                Stage name: {{ member.stage-name }} <br>
+                DOB: {{ member.date-of-birth }} <br>
+                Position(s): {{ member.position }} <br><br>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 <img class="navbar-image" src="/assets/images/wjsn_sequence.jpg" alt="WJSN Logo" />
 
