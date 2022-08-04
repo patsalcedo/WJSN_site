@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+</head>
+<body>
+    <nav id="top" class="navbar">
+        <div class="container navbar-container">
+            <a class="navbar-brand" href="/">
+                <img class="navbar-image" src="/assets/img/wjsn_logo.png" width="100px" height="100px" alt="WJSN Logo" />
+            </a>
+            <div class="nav-bar__links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Discography</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Tour</a></li>
+                    <li><a href="">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% include header.html color="blue" %}
+    {{ content }}
+    Site time: {{ site.time }}
+</body>
+</html>
