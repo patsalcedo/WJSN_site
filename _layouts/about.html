@@ -10,7 +10,7 @@ author: "Pat"
 
         <div class="about-container">
             <p>Cosmic Girls (우주소녀), also known as WJSN is a 13-member girl group under Starship Entertainment and Yuehua Entertainment. 
-            The group consists of EXY, Seola, Xuan Yi, Bona, Soobin, Luda, Dawon, Eunseo, Cheng Xiao, Mei Qi, Yeoreum, Dayoung, and Yeonjung. 
+            The group consists of 10 active members Exy, Seola, Bona, Soobin, Luda, Dawon, Eunseo, Yeoreum, Dayoung, and Yeonjung. 
             They debuted on February 25, 2016, with their first mini-album “Would You Like?”</p>
             <p>Cosmic Girls Fandom Name: Ujung (우정) (Means “friendship” in Korean).</p>
             <p>Cosmic Girls Official Fan Color: Vivid Tangerine, Airforce Blue, and Timberwolf.</p>
@@ -20,15 +20,20 @@ author: "Pat"
 
 <section id="about" class="section">
     <div class="container">
+        {% for member in site.data.members %}
+        <div class="image-container">
+            <img src="{{ member.image-src }}"/>
+        </div>
 
         <div class="members-about-container">
-            {% for member in site.data.members %}
-                Name: {{ member.name }} <br>
-                Stage name: {{ member.stage-name }} <br>
+            
+            <h3>{{ member.stage-name }}</h3>
+                Real Name: {{ member.name }} <br>
                 DOB: {{ member.date-of-birth }} <br>
                 Position(s): {{ member.position }} <br><br>
-            {% endfor %}
+            
         </div>
+        {% endfor %}
     </div>
 </section>
 
