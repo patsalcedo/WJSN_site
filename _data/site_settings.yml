@@ -1,0 +1,12 @@
+navigation:
+  - title: News
+    url: /news/
+
+  - title: Gallery
+    url: /gallery/
+
+  - title: Discography
+    url: /discography/
+
+  - title: About
+    url: /about/
