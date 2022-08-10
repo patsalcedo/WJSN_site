@@ -105,14 +105,12 @@
  a {
    color: $wjsn-blue;
    text-decoration: none;
- 
-   &:visited {
-     color: darken($wjsn-blue, 15%);
-   }
+   text-align: center;
+   padding: 14px 16px;
  
    &:hover {
-     color: $text-color;
-     text-decoration: underline;
+     background-color: $wjsn-grey;
+     text-decoration: none;
    }
  
    .social-media-list &:hover {
@@ -124,6 +122,25 @@
    }
  }
  
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
  
  /**
   * Blockquotes

@@ -7,7 +7,7 @@
             <div class="nav-bar-links">
                 <ul>
                     {% for nav in site.data.site_settings.navigation %}
-	                    <li><a href="{{ nav.url }}">{{ nav.title }}</a><li>
+	                    <li class="nav-link"><a href="{{ nav.url }}">{{ nav.title }}</a><li>
                     {% endfor %}
                 </ul>
             </div>
