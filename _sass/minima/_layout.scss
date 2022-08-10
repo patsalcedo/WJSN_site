@@ -31,6 +31,25 @@
 }
 
 
+
+
+
+.hero {
+	background-size: cover;
+  min-height: 25rem;
+  padding: 16rem 0 3rem 0;
+
+  margin-left: calc(-50vw + (768px/2));
+  margin-right: calc(-50vw + (768px/2));  
+
+  &__title {
+    font-size: 6rem;
+    line-height: 1.2;
+    margin: 0;
+  }
+}
+
+
 /**
  * Site footer
  */
