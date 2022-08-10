@@ -29,7 +29,7 @@
   color: black;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -56,3 +56,36 @@ li a:hover {
 .navbar-image {
   padding: 0;
 }
+
+.navbar {
+  background-color: white;
+	padding: 20px 0;
+}
+
+.navbar-container {
+  display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		@media only screen and (max-width: 46.87em) {
+			justify-content: space-evenly;
+		}
+
+		@include respond(phone) {
+			align-content: space-between;
+			height: auto;
+		}
+
+		@media only screen and (max-width: 21.87em) {
+			justify-content: center;
+		}
+}
+
+.nav-bar-links {
+  margin: 0;
+	padding: 0;
+	display: inline-flex;
+	justify-content: space-evenly;
+	width: 100%;
+} */
