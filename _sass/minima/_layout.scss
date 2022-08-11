@@ -60,6 +60,41 @@
 }
 
 
+/* About page */
+.section {
+  margin-top: 40px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  margin: 20px;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.about-container {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
 /**
  * Site footer
  */
