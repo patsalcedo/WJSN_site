@@ -1,0 +1,11 @@
+---
+layout: "default"
+title: "Members"
+author: "Pat"
+---
+
+{% for member in site.members %}
+    <div class="member">
+        <h2><a href="{{ member.url }}">{{ member.title }}</a></h2>
+    </div>
+{% endfor %}

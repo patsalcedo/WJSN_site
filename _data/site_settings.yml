@@ -8,5 +8,8 @@ navigation:
   - title: Discography
     url: /discography/
 
+  - title: Members
+    url: /members/
+
   - title: About
     url: /about/
